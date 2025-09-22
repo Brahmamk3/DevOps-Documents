@@ -53,7 +53,9 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 
 
-### linux
+# linux
+## run this all cmd's
+
 ```
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
