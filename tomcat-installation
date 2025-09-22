@@ -1,0 +1,25 @@
+# tomact installed cmd's
+
+```
+# Install Java (Amazon Corretto 17)
+sudo yum install -y java-17-amazon-corretto
+
+# Move to /opt directory
+cd /opt
+
+# Download Apache Tomcat 10.1.17
+sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.17/bin/apache-tomcat-10.1.17.tar.gz
+
+# Extract and rename the Tomcat folder
+sudo tar -xvzf apache-tomcat-10.1.17.tar.gz
+sudo mv apache-tomcat-10.1.17 tomcat
+
+# Set execute permissions for scripts
+sudo chmod +x /opt/tomcat/bin/*.sh
+
+# Start Tomcat
+sudo /opt/tomcat/bin/startup.sh
+
+# (Optional) Print Tomcat version
+/opt/tomcat/bin/version.sh
+```
